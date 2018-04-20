@@ -4,6 +4,13 @@
 
 com.sven.rmtest.Application.main()
 
+### how to run
+
+```
+gradle run
+```
+
+
 ### output
 
 ```
