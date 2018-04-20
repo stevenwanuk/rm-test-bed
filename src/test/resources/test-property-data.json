@@ -1,0 +1,24 @@
+[
+ {
+   "propertyReference": 1,
+   "price": 1000000,
+   "bedrooms": 7,
+   "bathrooms": 2,
+   "houseNumber": "12",
+   "address": "Richard Lane",
+   "region": "London",
+   "postcode": "W1F 3FT",
+   "propertyType": "Mansion"
+ },
+ {
+   "propertyReference": 2,
+   "price": 100000,
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "houseNumber": "22",
+   "address": "Brick Road",
+   "region": "Sheffield",
+   "postcode": "SH1 1AW",
+   "propertyType": "Terraced"
+ }
+] 

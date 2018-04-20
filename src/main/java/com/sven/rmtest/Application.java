@@ -14,17 +14,17 @@ public class Application
         //1 Find the mean price in the postcode outward "W1F"
         System.out.println("-------------------");
         String queryPostcodeOutward = "W1F";
-        Double meanPrice = PropertyUtils.getMeanPriceByPostcodeOutWard(queryPostcodeOutward, properties);
+        Double meanPrice = PropertyUtils.getMeanPriceByPostcodeOutward(queryPostcodeOutward, properties);
         System.out.println(String.format("Mean price for postcode [%s] is %f", queryPostcodeOutward, meanPrice));
         
         
         //2 Find the difference in average property prices between detached houses and flats?
         Double detachedHouseMeanPrice = 
-                PropertyUtils.getMeanPriceByPropertyType(Constants.PROPERTY_TYPE_KEY_DETACHEDHOUSE, properties);
+                PropertyUtils.getMeanPriceByPropertyType(PropertyType.Detached, properties);
         System.out.println(String.format("Mean price of detached houses is %f", detachedHouseMeanPrice));
         
         Double flatMeanPrice = 
-                PropertyUtils.getMeanPriceByPropertyType(Constants.PROPERTY_TYPE_KEY_FLAT, properties);
+                PropertyUtils.getMeanPriceByPropertyType(PropertyType.Flat, properties);
         System.out.println(String.format("Mean price of flats is %f", flatMeanPrice));
         
         System.out.println(String.format("Mean price difference between detached houses & flats is %f", 

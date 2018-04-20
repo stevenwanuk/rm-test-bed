@@ -10,13 +10,13 @@ public class Property
     private String address;
     private String region;
     private String postcode;
-    private String propertyType;
+    private PropertyType propertyType;
     
     public Property() {
         
     }
     public Property(long propertyReference, double price, String postcode,
-            String propertyType)
+            PropertyType propertyType)
     {
         this.postcode = postcode;
         this.propertyReference = propertyReference;
@@ -104,12 +104,12 @@ public class Property
         this.postcode = postcode;
     }
 
-    public String getPropertyType()
+    public PropertyType getPropertyType()
     {
         return propertyType;
     }
 
-    public void setPropertyType(String propertyType)
+    public void setPropertyType(PropertyType propertyType)
     {
         this.propertyType = propertyType;
     }
